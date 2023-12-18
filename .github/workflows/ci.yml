@@ -14,11 +14,11 @@ jobs:
       - name: Clone repository
         uses: actions/checkout@v2
 
-      - name: Auto green
+      - name: zdxq
         run: |
           git config --local user.email "lpy15231240@outlook.com"
           git config --local user.name "bushiwode"
           git remote set-url origin https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
           git pull --rebase
-          git commit --allow-empty -m "Make Program Every Day!"
+          git commit --allow-empty -m "Make progress Every Day!"
           git push
