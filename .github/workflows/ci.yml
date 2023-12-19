@@ -8,7 +8,7 @@ on:
     - cron: "*/5 * * * *"
 
 jobs:
-  autogreen:
+  zdxx:
     runs-on: ubuntu-latest
     steps:
       - name: Clone repository
